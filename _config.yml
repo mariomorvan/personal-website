@@ -48,6 +48,7 @@ defaults:
       comments: true
       # share: true
       related: true
+      permalink: /:title/
 
 
 locale: en-GB
