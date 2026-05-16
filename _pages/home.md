@@ -1,6 +1,6 @@
 ---
-title: Home
-layout: splash
+# title: Home
+layout: single
 permalink: /
 classes:
   - landing
