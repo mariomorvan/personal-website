@@ -5,17 +5,16 @@ permalink: /
 classes:
   - landing
 ---
-Research Engineer, Data & AI Scientist, working across sectors and disciplines.
+Transdisciplinary research scientist and technologist, with a background in astrophysics, machine learning, and a pronounced interest for open and participatory science and democracy.
 
-My current pojects:
-- [Citation Location Needed](2026/05/17/Wikipedia-citations.html)
+Current projects:
+- [Citation Location Needed](Wikipedia-citations/)
 - DemocraTree ... 
 - Collective Modelling ...
 - CommonGraph ...
 
 
-Full CV ...
-
+For any query, you can contact me there. 
 
 Here is a random citation: 
 ... 
