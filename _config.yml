@@ -20,16 +20,19 @@
 
 title: Mario Morvan
 name: Mario Morvan
-email: your-email@example.com
+email: contact@mariomorvan.org
 description: >
   test
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://mariomorvan.org" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: 
 github_username:  mariomorvan
 author:
-  name: "Mario Morvan"
-  bio: "test test "
+  # name: "Mario Morvan"
+  # bio: "Transdisciplinary research scientist and technologist, with a background in astrophysics and machine learning, and an active interest in open and participatory science and democracy."
+  github: mariomorvan
+  email: contact@mariomorvan.org
+  # wikipedia: test
 
 # Build settings
 theme: minimal-mistakes-jekyll
