@@ -5,7 +5,7 @@ permalink: /
 classes:
   - landing
 ---
-Transdisciplinary research scientist and technologist, with a background in astrophysics and machine learning, and an active interest in open and participatory science and democracy.
+Transdisciplinary research scientist and technologist, with a background in astrophysics and machine learning, and an active interest in open, participatory science and democracy.
 
 Current projects:
 - *Citation Location Needed*, to be presented at Wikimania 2026's research track ([blog](Wikipedia-citations/))
