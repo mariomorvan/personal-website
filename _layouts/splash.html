@@ -9,6 +9,37 @@ layout: default
   {% include page__hero_video.html %}
 {% endif %}
 
+{% if site.data.quotes %}
+<script>
+  function getRandomQuote() {
+    const quotes = {{ site.data.quotes | jsonify }};
+    return quotes[Math.floor(Math.random() * quotes.length)];
+  }
+
+  function updateQuote() {
+    const quote = getRandomQuote();
+    const excerptElement = document.querySelector('.page__lead');
+    if (excerptElement) {
+      excerptElement.textContent = quote.text;
+      if (quote.author) {
+        excerptElement.textContent += ' — ' + quote.author;
+      }
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', updateQuote);
+
+  // Optional: update on button click
+  const actionButton = document.querySelector('.page__hero .btn');
+  if (actionButton) {
+    actionButton.addEventListener('click', function(e) {
+      e.preventDefault();
+      updateQuote();
+    });
+  }
+</script>
+{% endif %}
+
 <div id="main" role="main">
   <article class="splash" itemscope itemtype="https://schema.org/CreativeWork"{% if page.locale %} lang="{{ page.locale }}"{% endif %}>
     {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}

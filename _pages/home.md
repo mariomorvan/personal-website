@@ -1,14 +1,17 @@
 ---
-# title: Home
-layout: single
+title: " "
+layout: splash
 permalink: /
-classes:
-  - landing
+hidden: true
+header:
+    overlay_color: "#5e616c"
+    overlay_image: /assets/images/deep_field.jpg
+    actions:
+        - label: "random quote"
+excerpt: ""
+intro:
+  - excerpt: 'Interdisciplinary research, data, ML scientist, technologist and communicator with an active interest in open, participatory science and democracy.'
+
 ---
-Interdisciplinary research, data, ML scientist, technologist and communicator with an active interest in open, participatory science and democracy.
 
-
-
-<!-- Contact -->
-
-<!-- Here is a random citation:  -->
+{% include feature_row id="intro" type="center" %}
