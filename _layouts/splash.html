@@ -13,14 +13,17 @@ layout: default
 <script>
   function getRandomQuote() {
     const quotes = {{ site.data.quotes | jsonify }};
-    return quotes[Math.floor(Math.random() * quotes.length)];
+    const randomIndex = Math.floor(Math.random() * quotes.length);
+    console.log('Total quotes:', quotes.length, 'Selected index:', randomIndex);
+    return quotes[randomIndex];
   }
 
   function updateQuote() {
     const quote = getRandomQuote();
+    console.log('Quote selected:', quote);
     const excerptElement = document.querySelector('.page__lead');
     if (excerptElement) {
-      excerptElement.textContent = quote.text;
+      excerptElement.textContent = quote.content_en || quote.content_fr;
       if (quote.author) {
         excerptElement.textContent += ' — ' + quote.author;
       }
@@ -41,7 +44,7 @@ layout: default
 {% endif %}
 
 <div id="main" role="main">
-  <article class="splash" itemscope itemtype="https://schema.org/CreativeWork"{% if page.locale %} lang="{{ page.locale }}"{% endif %}>
+  <article class="splashquote" itemscope itemtype="https://schema.org/CreativeWork"{% if page.locale %} lang="{{ page.locale }}"{% endif %}>
     {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
     {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
     {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}">{% endif %}
