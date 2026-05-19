@@ -11,7 +11,7 @@ header:
         - label: "random quote"
 excerpt: ""
 intro:
-  - excerpt: 'Interdisciplinary research, data, ML scientist, technologist and communicator with an active interest in opening knowledge, science and democracy.'
+  - excerpt: 'Interdisciplinary researcher, data & ML scientist, technologist and communicator with an active interest in opening knowledge, science and democracy.'
 
 ---
 

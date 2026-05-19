@@ -18,27 +18,40 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Mario Morvan
+title: "Mario Morvan"
 name: Mario Morvan
 email: contact@mariomorvan.org
-description: >
-  test
+description: "Mario Morvan's website"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://mariomorvan.org" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: 
+repository: "mariomorvan/personal-website"
 github_username:  mariomorvan
 author:
   # name: "Mario Morvan"
-  # bio: "Transdisciplinary research scientist and technologist, with a background in astrophysics and machine learning, and an active interest in open and participatory science and democracy."
+  bio: "Interdisciplinary researcher, data & ML scientist, technologist and communicator with an active interest in opening knowledge, science and democracy."
   github: mariomorvan
   email: contact@mariomorvan.org
-  # wikipedia: test
+  orcid: test
+  links:
+    - label: "ORCiD"
+      icon: "fa-brands fa-orcid"
+      url: "https://orcid.org/0000-0001-8587-2112"
+# footer:
+#   links:
+    # - label: "Email"
+    #   icon: "fa-solid fa-envelope"
+    #   url: "mailto:contact@mariomorvan.org"
+    # - label: "Github"
+    #   icon: "fab fa-fw fa-github"
+    #   url: "https://github.com/mariomorvan"
+  # email: contact@mariomorvan.org
 
 # Build settings
 theme: minimal-mistakes-jekyll
 minimal_mistakes_skin: dirt
-plugins:
-  - jekyll-feed
+# plugins:
+#   - jekyll-feed
 defaults:
   # _posts
   - scope:
