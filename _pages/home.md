@@ -6,6 +6,7 @@ hidden: true
 header:
     overlay_color: "#5e616c"
     overlay_image: /assets/images/deep_field.jpg
+    overlay_filter: 0.5
     actions:
         - label: "random quote"
 excerpt: ""
