@@ -10,7 +10,7 @@ header:
         - label: "random quote"
 excerpt: ""
 intro:
-  - excerpt: 'Interdisciplinary research, data, ML scientist, technologist and communicator with an active interest in open, participatory science and democracy.'
+  - excerpt: 'Interdisciplinary research, data, ML scientist, technologist and communicator with an active interest in open knowledge, participatory science and democracy.'
 
 ---
 
