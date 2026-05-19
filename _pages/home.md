@@ -1,6 +1,6 @@
 ---
 title: " "
-layout: splash
+layout: splashquote
 permalink: /
 hidden: true
 header:
