@@ -10,6 +10,38 @@ layout: default
 {% endif %}
 
 {% if site.data.quotes %}
+<style>
+  .quote-text {
+    font-size: 0.9em;
+    font-style: italic;
+    line-height: 1.5;
+    margin-bottom: 0.8rem;
+  }
+  
+  .quote-text::before {
+    content: '“';
+    margin-right: 0.2em;
+    opacity: 0.8;
+  }
+  
+  .quote-text::after {
+    content: '”';
+    margin-left: 0.2em;
+    opacity: 0.8;
+  }
+  
+  .quote-attribution {
+    font-size: 0.75em;
+    font-style: normal;
+    opacity: 0.9;
+    margin-top: 0.1rem;
+  }
+  
+  .quote-author {
+    font-weight: 500;
+  }
+</style>
+
 <script>
   function getRandomQuote() {
     const quotes = {{ site.data.quotes | jsonify }};
@@ -23,10 +55,18 @@ layout: default
     console.log('Quote selected:', quote);
     const excerptElement = document.querySelector('.page__lead');
     if (excerptElement) {
-      excerptElement.textContent = quote.content_en || quote.content_fr;
+      let quoteHTML = '<div class="quote-text">' + (quote.content_en || quote.content_fr) + '</div>';
       if (quote.author) {
-        excerptElement.textContent += ' — ' + quote.author;
+        quoteHTML += '<div class="quote-attribution"><span class="quote-author">' + quote.author + '</span>';
+        if (quote.source) {
+          quoteHTML += ' <span class="quote-source"> — ' + quote.source + '</span>';
+        }
+        if (quote.source_loc) {
+          quoteHTML += '<span class="quote-source"> (' + quote.source_loc + ')</span>';
+        }
+        quoteHTML += '</div>';
       }
+      excerptElement.innerHTML = quoteHTML;
     }
   }
 
