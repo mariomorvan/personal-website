@@ -20,7 +20,7 @@ Previous projects:
     - [EyeFocus](https://animorph.coop/work/eyefocus/)
 
 - Data analysis and modelling for environmental monitoring during Covid 19 crisis (at UKHSA, DHSC):
-    - Multivariate, spatiotemporal modelling of Covid 19 prevalence from wastewater data in England.[^morvan_analysis]
+    - Multivariate, spatiotemporal modelling of Covid 19 prevalence from wastewater data in England.[^morvan_analysis] ([blog](https://communities.springernature.com/posts/from-the-english-sewage-to-covid-19-infections-using-machine-learning))
     - Lessons Learned from the United Kingdom National COVID-19 Surveillance Programmes in Monitoring Wastewater. [^wade_wastewater][^wade_understanding]
 
 - Modelling exoplanets with deep learning (at University College London):
