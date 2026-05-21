@@ -31,7 +31,7 @@ author:
   # name: "Mario Morvan"
   bio: "Interdisciplinary researcher, data & ML scientist, technologist and communicator with an active interest in opening knowledge, science and democracy."
   github: mariomorvan
-  email: contact@mariomorvan.org
+  email: contact-mario-morvan@pm.me
   orcid: test
   links:
     - label: "ORCiD"
@@ -41,11 +41,11 @@ author:
 #   links:
     # - label: "Email"
     #   icon: "fa-solid fa-envelope"
-    #   url: "mailto:contact@mariomorvan.org"
+    #   url: "mailto:contact-mario-morvan@pm.me"
     # - label: "Github"
     #   icon: "fab fa-fw fa-github"
     #   url: "https://github.com/mariomorvan"
-  # email: contact@mariomorvan.org
+  # email: ccontact-mario-morvan@pm.me
 
 # Build settings
 theme: minimal-mistakes-jekyll
