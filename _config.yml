@@ -69,7 +69,8 @@ defaults:
 
 locale: en-GB
 show_date: true
-
+google_site_verification: ef_wwyKh9ysniooYKp5XkqSYAZKKMdpk_x-4breaTB8
+bing_site_verification: A0D288137D58B4BD0B9B3581F22FE5B7
 include: ["_pages"]
 
 # Exclude from processing.
