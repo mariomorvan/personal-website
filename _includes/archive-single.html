@@ -1,0 +1,85 @@
+{% assign locale = include.locale | default: site.locale %}
+{% if post.header.teaser %}
+  {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
+{% else %}
+  {% assign teaser = site.teaser %}
+{% endif %}
+
+{% if post.id %}
+  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% else %}
+  {% assign title = post.title %}
+{% endif %}
+
+<div class="{{ include.type | default: 'list' }}__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork"{% if post.locale %} lang="{{ post.locale }}"{% endif %}>
+    {% if include.type == "grid" and teaser %}
+      <div class="archive__item-teaser">
+        <img src="{{ teaser | relative_url }}" alt="">
+      </div>
+    {% endif %}
+    <h2 class="archive__item-title no_toc p-name" itemprop="headline">
+      {% if post.link %}
+        <a href="{{ post.link }}">{{ title }}</a> <a class="u-url" href="{{ post.url | relative_url }}" rel="permalink"><i class="fas fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
+      {% else %}
+        <a class="u-url" href="{{ post.url | relative_url }}" rel="permalink">{{ title }}</a>
+      {% endif %}
+    </h2>
+    {% assign document = post | default: page %}
+    {% assign show_date = document.show_date and document.date %}
+    {% assign categories_sorted = post.categories | sort_natural %}
+    {% assign categories_joined = categories_sorted | join: "" %}
+    {% assign show_categories = site.category_archive.path and categories_joined != "" %}
+    {% assign show_read_time = document.read_time %}
+    {% if show_date or show_categories or show_read_time %}
+      <p class="page__meta">
+        {% if show_categories %}
+          {% case site.category_archive.type %}
+            {% when "liquid" %}
+              {% assign path_type = "#" %}
+            {% when "jekyll-archives" %}
+              {% assign path_type = nil %}
+          {% endcase %}
+          <span class="page__taxonomy">
+            <span itemprop="keywords">
+            {% for category_word in categories_sorted %}
+              <a href="{{ category_word | slugify | prepend: path_type | prepend: site.category_archive.path | relative_url }}" class="page__taxonomy-item p-category" rel="tag">{{ category_word }}</a>{% unless forloop.last %}<span class="sep">, </span>{% endunless %}
+            {% endfor %}
+            </span>
+          </span>
+        {% endif %}
+
+        {% if show_categories and show_date %}<span class="page__meta-sep"></span>{% endif %}
+
+        {% if show_date %}
+          {% assign date = document.date %}
+          <span class="page__meta-date">
+            <i class="far {% if include.type == 'grid' and document.read_time and document.show_date %}fa-fw {% endif %}fa-calendar-alt" aria-hidden="true"></i>
+            {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
+            <time datetime="{{ date | date_to_xmlschema }}">{{ date | date: date_format }}</time>
+          </span>
+        {% endif %}
+
+        {% if (show_date or show_categories) and show_read_time %}<span class="page__meta-sep"></span>{% endif %}
+
+        {% if show_read_time %}
+          {% assign words_per_minute = document.words_per_minute | default: site.words_per_minute | default: 200 %}
+          {% assign words = document.content | strip_html | number_of_words %}
+
+          <span class="page__meta-readtime">
+            <i class="far {% if include.type == 'grid' and document.read_time and document.show_date %}fa-fw {% endif %}fa-clock" aria-hidden="true"></i>
+            {% if words < words_per_minute %}
+              {{ site.data.ui-text[locale].less_than | default: "less than" }} 1 {{ site.data.ui-text[locale].minute_read | default: "minute read" }}
+            {% elsif words == words_per_minute %}
+              1 {{ site.data.ui-text[locale].minute_read | default: "minute read" }}
+            {% else %}
+              {{ words | divided_by: words_per_minute }} {{ site.data.ui-text[locale].minute_read | default: "minute read" }}
+            {% endif %}
+          </span>
+        {% endif %}
+      </p>
+    {% endif %}
+
+    {% if post.excerpt %}<p class="archive__item-excerpt p-summary" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
+  </article>
+</div>
