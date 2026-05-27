@@ -5,7 +5,8 @@ permalink: /projects/
 author_profile: true
 ---
 
-Current projects:
+## Current projects
+
 - *Citation Location Needed*, to be presented at Wikimania 2026's research track ([blog](/citation-location-needed/))
 - *DemocraTree: An Inventory and Interactive Map of Democratic
 Forms*, to be presented at the Democracy & Digital Citizenship 2026 conference,
@@ -13,7 +14,7 @@ Forms*, to be presented at the Democracy & Digital Citizenship 2026 conference,
 - [CommonGraph](https://commongraph.org), a prototype platform builder for graph-based knowledge co-production and collaboration.
 
 
-Previous projects:
+## Previous projects
 
 - AI & XR for cognitive and visual impairment (at Animorph Co-op and CrossSense Ltd, 2024-2025)
     - [CrossSense](https://crosssense.com/), 
@@ -32,8 +33,7 @@ Previous projects:
 - Detecting star clusters with clustering algorithms in Gaia (at University of Barcelona)
     - 2018 A&A follow-up paper[^castro_new]
     - 2017 Master's thesis[^morvan_searching]
-    
-    
+
 
 [^morvan_analysis]: Morvan, Mario, Anna Lo Jacomo, Celia Souque, et al. ‘An Analysis of 45 Large-Scale Wastewater Sites in England to Estimate SARS-CoV-2 Community Prevalence’. Nature Communications 13, no. 1 (2022): 1. https://doi.org/10.1038/s41467-022-31753-y.
 [^morvan_deep]: Morvan, Mario. ‘Deep Learning, Shallow Dips: Transit Light Curves Have Never Been So Trendy’. PhD thesis, University College London, 2023. https://discovery.ucl.ac.uk/id/eprint/10163203/1/Morvan_10163203_thesis_revised.pdf.
@@ -68,4 +68,3 @@ Previous projects:
 [^yip_lessons]: Yip, Kai Hou, Quentin Changeat, Ingo Waldmann, et al. ‘Lessons Learned from Ariel Data Challenge 2022 - Inferring Physical Properties of Exoplanets From Next-Generation Telescopes’. Proceedings of the NeurIPS 2022 Competitions Track, 31 August 2023, 1–17. https://proceedings.mlr.press/v220/yip23a.html.
 [^yip_pushing]: Yip, Kai Hou, Nikolaos Nikolaou, Piero Coronica, et al. ‘Pushing the Limits of Exoplanet Discovery via Direct Imaging with Deep Learning’. In Machine Learning and Knowledge Discovery in Databases, edited by Ulf Brefeld, Elisa Fromont, Andreas Hotho, Arno Knobbe, Marloes Maathuis, and Céline Robardet. Lecture Notes in Computer Science. Springer International Publishing, 2020. https://doi.org/10.1007/978-3-030-46133-1_20.
 [^yip_esa]: Yip, Kai Hou, Ingo P. Waldmann, Quentin Changeat, et al. ‘ESA-Ariel Data Challenge NeurIPS 2022: Inferring Physical Properties of Exoplanets From Next-Generation Telescopes’. Paper presented at Neurips 2022 Competition track. 29 June 2022. https://doi.org/10.48550/arXiv.2206.14642.
-    
