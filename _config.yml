@@ -67,6 +67,14 @@ defaults:
       permalink: /:title/
       show_date: true
 
+tag_archive:
+  type: liquid
+  path: /tags/
+category_archive:
+  type: liquid
+  path: /categories/
+
+
 
 locale: en-GB
 show_date: true
