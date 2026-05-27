@@ -1,7 +1,8 @@
 ---
 title:  "Citation Location Needed"
 date:   2026-05-17
-categories: ["Wikipedia", "citations", "research"]
+tags: ["Wikipedia", "citations"]
+categories: ["Research"]
 toc: true
 ---
 
