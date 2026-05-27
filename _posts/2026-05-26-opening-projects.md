@@ -1,14 +1,17 @@
 ---
-title:  "Opening Projects"
+title:  "A Case for Opening Projects"
 date:   2026-05-27
 tags: ["Open", "Projects", "Research"]
+categories: ["Essay"]
 toc: true
 ---
 
-I know myself enough to know that I won't have time, skills or resources to do all the projects I would like to do. In other words, I'm a dreamer: I like imagining things whether or not they'll realise.
-However, I'm dreaming not of other worlds, but of slightly evolved versions of this one.
+I probably won't have time, skills or resources to do all the projects I would like to do.
+In other words, I'm a dreamer: I like imagining things whether or not they'll realise. However, I'm dreaming not of other worlds, but of slightly evolved versions of this one.
 Some of these variants strive towards socially more just and thriving worlds, some aim to grow our shared understanding, while others might respond to other quirks and motives.
+
 Often, I wonder who else might be thinking about similar questions, problems, projects, possibly from different perspectives. And, more generally: what do other people need or would want to know? I'm grateful for the efforts that have enabled those questions to be answered, but I feel that we currently still fundamentally lack the appropriate means, whatever they are, to give full justice to these questions.
+
 This post is not an attempt to dictate how exactly projects should be collectivised—though it does touch on the how question throughout—but rather to offer some reasons and examples to make a case for the opening, dare I say commoning, of projects.
 
 ## Project vision
@@ -19,6 +22,7 @@ Without wanting to restrict, formalise or fixate too much what a project's motiv
 
 ## Project evolution
 If a project's objectives are publicly outlined early on, along with ways to evaluate its real-world impact, then its method can be iteratively adapted to fit its objective better, and other people can provide feedback, join the project or develop alternative solutions to it.
+
 Furthermore, it will help the honest evaluation of a project, perhaps alleviating the publication bias towards positive results affecting sciences. 
 Now, the world itself is moving, and so might a project's objectives and potential impact over time. It thus sounds reasonable to consider that the different components of a project co-evolve together and with the rest of the world dialectically.
 
@@ -31,6 +35,8 @@ Still, there are existing tools and platforms that foster openness throughout th
 
 ## A collectively managed ecology of projects 
 Consider a large pool of project ideas collected from everyone, and a group trying to prioritise between them. It would be ambitious to try and consider all projects in equal measure (what would this even mean?), and pretentious for anyone to claim that their ideas are worth more consideration than any others. What's more, it would be silly not to consider the similarities and synergies between projects, past, present and future (through their potential impact), when it comes to planning.
+
 It is a complex problem, highly dependent on group decisions and values at the meta-level, and without a single best "method", unless a trivial metric is optimised for. Also, rather than referring to a mere economy of projects, I prefer to imagine an ecology of projects, recognising their codependencies and links with the real world.
 However, even before being able to compare and relate projects in a project space, a shared vocabulary or medium needs to be agreed upon to format and structure projects throughout their lifecycles. For examples, if 'objectives', 'impact', or some other other aspect are deemed important enough to feature as projects' properties, it would then be sensible to carefully decide on these shared notions, their definitions (e.g. through a glossary), and relations (through an ontology).
+
 This shared vocabulary, data structure, standards and design form the technical meta-layer of governance on open platforms, and play an instrumental role in shaping how projects are to be conducted and opened. Given their importance, a collectively managed ecology of projects may want to inquire and claim some agency in setting these technical rules.
