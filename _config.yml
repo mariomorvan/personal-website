@@ -65,6 +65,7 @@ defaults:
       # share: true
       related: true
       permalink: /:title/
+      show_date: true
 
 
 locale: en-GB

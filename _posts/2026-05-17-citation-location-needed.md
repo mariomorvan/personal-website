@@ -1,7 +1,5 @@
 ---
-# layout: post
 title:  "Citation Location Needed"
-# subtitle: "test test test"
 date:   2026-05-17
 categories: ["Wikipedia", "citations", "research"]
 toc: true
